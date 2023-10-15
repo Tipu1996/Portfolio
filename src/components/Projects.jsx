@@ -36,6 +36,7 @@ const skillStyles = {
 	alignItems: "center",
 	marginBottom: "5%",
 	justifyContent: "center",
+	color: "#EBC85E",
 };
 
 const skills = [
