@@ -35,6 +35,7 @@ const skillStyles = {
 	flexWrap: "wrap",
 	alignItems: "center",
 	marginBottom: "5%",
+	justifyContent: "center",
 };
 
 const skills = [
