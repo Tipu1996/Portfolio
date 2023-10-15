@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Intro from "./components/Intro";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects.jsx";
+import Footer from "./components/Footer";
 
 const App = () => {
 	const [theme, setTheme] = useState("dark");
@@ -22,6 +23,7 @@ const App = () => {
 			<Intro />
 			<AboutMe />
 			<Projects />
+			<Footer />
 		</ThemeProvider>
 	);
 };
