@@ -1,5 +1,11 @@
 import { Typography, Grid } from "@mui/material";
 
+const typographyStyle = {
+	display: "block",
+	align: "center",
+	marginBottom: "4%",
+};
+
 const AboutMe = () => {
 	return (
 		<Grid container justifyContent={"center"} marginTop={"3%"}>
@@ -12,29 +18,21 @@ const AboutMe = () => {
 				>
 					ABOUT ME
 				</Typography>
-				<Typography
-					variant="p"
-					display="block"
-					align="center"
-					marginBottom={"2"}
-				>
-					I am a passionate full-stack developer with expertise in web
-					app development and security testing. I excel in secure web
-					app development, mastering web front and backend
-					technologies.
+				<Typography {...typographyStyle}>
+					I'm a versatile full-stack developer passionate about
+					creating seamless web experiences. With expertise in
+					JavaScript/TypeScript, React, and Express, I craft intuitive
+					user interfaces and robust back-end solutions
 				</Typography>
-				<Typography variant="p" display="block" align="center">
-					I have built front-end applications that serves as a hub of
-					information for countries worldwide, and a full-stack MERN
-					application with CRUD functionalities and user
-					authentication.
+				<Typography {...typographyStyle}>
+					I'm also a cybersecurity enthusiast, skilled in web app
+					security using tools like ZAP and Burp Suite. Committed to
+					innovation, I've contributed to dynamic web apps and secure,
+					user-centric software. My goal is simple: creating impactful
+					digital solutions
 				</Typography>
-				<Typography variant="p" display="block" align="center">
-					I am committed to integrating robust security measures into
-					development and creating innovative, cyber-strong
-					applications. I am currently pursuing a Master’s in
-					Information Security to enhance digital landscapes and
-					contribute to cutting-edge cybersecurity tools.
+				<Typography {...typographyStyle}>
+					Let's collaborate and turn your ideas into web realities
 				</Typography>
 			</Grid>
 		</Grid>
