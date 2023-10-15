@@ -3,7 +3,7 @@ import { Button, CardActions } from "@mui/material";
 const LinkButtons = ({ visit }) => {
 	return (
 		<CardActions sx={{ justifyContent: "space-evenly", marginY: "3%" }}>
-			{visit === "false" ? (
+			{visit === false ? (
 				<Button
 					variant="contained"
 					style={{
