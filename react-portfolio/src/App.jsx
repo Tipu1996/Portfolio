@@ -4,7 +4,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 import AboutMe from "./components/AboutMe";
-// import Projects from "./components/Projects";
+import Projects from "./components/Projects.jsx";
 
 const App = () => {
 	const [theme, setTheme] = useState("dark");
@@ -21,7 +21,7 @@ const App = () => {
 			<Header theme={theme} changeTheme={changeTheme} />
 			<Intro />
 			<AboutMe />
-			{/* <Projects /> */}
+			<Projects />
 		</ThemeProvider>
 	);
 };
