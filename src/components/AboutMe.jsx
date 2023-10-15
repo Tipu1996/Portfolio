@@ -9,7 +9,7 @@ const typographyStyle = {
 const AboutMe = () => {
 	return (
 		<Grid container justifyContent={"center"} marginTop={"3%"}>
-			<Grid item xs={4}>
+			<Grid item xs={8} md={4}>
 				<Typography
 					variant="h4"
 					align="center"

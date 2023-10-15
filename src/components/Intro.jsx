@@ -8,16 +8,16 @@ const Intro = () => {
 			justifyContent={"space-around"}
 			alignItems={"center"}
 		>
-			<Grid item xs={6}>
-				<Typography variant="h5" marginBottom={"3%"}>
+			<Grid item xs={10} md={6}>
+				<Typography variant="h6" marginBottom={"3%"}>
 					Hi, I am Abdullah Ashfaq
 				</Typography>
-				<Typography variant="h4">
+				<Typography variant="h5">
 					I am experienced FullStack Developer with a passion of
 					building efficient, secure and exceptional web applications
 				</Typography>
 			</Grid>
-			<Grid item xs={3}>
+			<Grid item xs={6} md={3}>
 				<img
 					src="devImg.jpg"
 					alt="devImage"
