@@ -19,7 +19,7 @@ const Intro = () => {
 			</Grid>
 			<Grid item xs={3}>
 				<img
-					src="../../public/devImg.jpg"
+					src="devImg.jpg"
 					alt="devImage"
 					style={{
 						borderRadius: "50%",
