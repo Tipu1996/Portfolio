@@ -46,6 +46,7 @@ const skills = [
 	"MongoDB",
 	"Postgres",
 ];
+
 const projects = [
 	{
 		name: "Countries App",
@@ -75,7 +76,14 @@ const projects = [
 
 const renderProjectCards = () => {
 	return projects.map((project, index) => (
-		<Grid item {...gridItemStyle} key={index}>
+		<Grid
+			item
+			{...gridItemStyle}
+			key={index}
+			justifyContent={"center"}
+			xs={10}
+			md={4}
+		>
 			<Card>
 				<CardContent>
 					<Typography {...headerStyle}>{project.name}</Typography>
@@ -110,7 +118,7 @@ const Projects = () => {
 			</Container>
 			<Container>
 				{/** this container replaces the very long Container commented out below */}
-				<Grid container spacing={4}>
+				<Grid container spacing={4} justifyContent={"center"}>
 					{renderProjectCards()}
 				</Grid>
 			</Container>
