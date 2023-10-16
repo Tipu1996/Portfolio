@@ -1,6 +1,6 @@
 import { Button, CardActions } from "@mui/material";
 
-const LinkButtons = ({ visit, url }) => {
+const LinkButtons = ({ visit, url, sourceCode }) => {
 	return (
 		<CardActions sx={{ justifyContent: "space-evenly", marginY: "3%" }}>
 			{visit === false ? (
@@ -31,6 +31,7 @@ const LinkButtons = ({ visit, url }) => {
 					borderRadius: "5rem",
 					fontWeight: "bold",
 				}}
+				href={sourceCode}
 			>
 				SOURCE CODE
 			</Button>

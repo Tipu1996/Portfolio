@@ -57,6 +57,7 @@ const projects = [
 			"A front-end application, serving as a hub of information for all the countries in the world by fetching data from an API server",
 		visit: true,
 		url: "https://friendly-cocada-f19b07.netlify.app/",
+		sourceCode: "https://github.com/Tipu1996/FrontEnd-Countries-App",
 	},
 	{
 		name: "Library App",
@@ -65,14 +66,17 @@ const projects = [
 			"A full-stack MERN application built from scratch, serving as a library. It has a backend server that uses MongoDB for data",
 		visit: false,
 		url: null,
+		sourceCode: "https://github.com/Tipu1996/Full-Stack-MERN-Library-App",
 	},
 	{
-		name: "Java SpringBoot Library",
+		name: "Java SpringBoot Library Server",
 		skills: ["Java", "SpringBoot"],
 		description:
 			"A BackEnd API server application built from scratch, serving for the same library project as the above-mentioned",
 		visit: false,
 		url: null,
+		sourceCode:
+			"https://github.com/Tipu1996/JavaSpringBoot-BackEnd-Library-Server",
 	},
 ];
 
@@ -104,7 +108,11 @@ const renderProjectCards = () => {
 						{project.description}
 					</Typography>
 				</CardContent>
-				<LinkButtons visit={project.visit} url={project.url} />
+				<LinkButtons
+					visit={project.visit}
+					url={project.url}
+					sourceCode={project.sourceCode}
+				/>
 			</Card>
 		</Grid>
 	));
