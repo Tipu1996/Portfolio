@@ -70,13 +70,45 @@ const projects = [
 	},
 	{
 		name: "Java SpringBoot Library Server",
-		skills: ["Java", "SpringBoot"],
+		skills: ["Java", "SpringBoot", "PostgreSQL"],
 		description:
 			"A BackEnd API server application built from scratch, serving for the same library project as the above-mentioned",
 		visit: false,
 		url: null,
 		sourceCode:
 			"https://github.com/Tipu1996/JavaSpringBoot-BackEnd-Library-Server",
+	},
+	{
+		name: "E-Commerce API with ASP.NET Core (C#)",
+		skills: [
+			"ASP.NET Core",
+			"C#",
+			"MongoDB",
+			"RESTful API",
+			"JWT Authentication",
+			"Data Modeling",
+		],
+		description:
+			"Explore a sleek E-Commerce API showcasing my skills in ASP.NET Core, C#, and MongoDB. Seamless user authentication, efficient shopping cart management, and streamlined order completion",
+		visit: false,
+		url: null,
+		sourceCode: "https://github.com/Tipu1996/C_Hash_E_Commerce_API",
+	},
+	{
+		name: "E-commerce API with JAVA Spring Boot and JWT Authentication",
+		skills: [
+			"JAVA",
+			"SpringBoot",
+			"REST API",
+			"MongoDB",
+			"JWT Authentication",
+			"Spring Security",
+		],
+		description:
+			"A fully functional e-commerce API built with Spring Boot and MongoDB, featuring secure JWT authentication",
+		visit: false,
+		url: null,
+		sourceCode: "https://github.com/Tipu1996/eCommerce-RestAPI-SpringBoot",
 	},
 ];
 
@@ -88,8 +120,7 @@ const renderProjectCards = () => {
 			key={index}
 			justifyContent={"center"}
 			xs={10}
-			md={4}
-		>
+			md={4}>
 			<Card>
 				<CardContent>
 					<Typography {...headerStyle}>{project.name}</Typography>
@@ -98,8 +129,7 @@ const renderProjectCards = () => {
 							<Typography
 								key={skillIndex}
 								variant="body2"
-								style={{ marginRight: "1rem" }}
-							>
+								style={{ marginRight: "1rem" }}>
 								{skill}
 							</Typography>
 						))}
