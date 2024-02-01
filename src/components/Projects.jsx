@@ -70,7 +70,7 @@ const projects = [
 	},
 	{
 		name: "Java SpringBoot Library Server",
-		skills: ["Java", "SpringBoot", "PostgreSQL"],
+		skills: ["JAVA", "SpringBoot", "REST API", "PostgreSQL"],
 		description:
 			"A BackEnd API server application built from scratch, serving for the same library project as the above-mentioned",
 		visit: false,
